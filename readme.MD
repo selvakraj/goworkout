@@ -1,12 +1,19 @@
 set up redis
 
-docker run --name my-redis -p 6379:6379 --restart always --detach redis
+Setup docker desktop in you laptop then do the following steps:
 
-Check:
-docker exec -it my-redis sh
+install docker container images
+1. docker run --name my-redis -p 6379:6379 --restart always --detach redis
 
-execute redis-cli in the shell
-ping
+login to container
+2. docker exec -it my-redis sh
+
+execute redis-cli in the container
+3  # redis-cli 
+
+4 type ping you should get pong respone
+
+it should  hardly take 10 min to do the entire setup
 
 --------
 
